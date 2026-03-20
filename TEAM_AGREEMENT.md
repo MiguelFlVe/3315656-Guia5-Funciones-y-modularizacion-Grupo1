@@ -8,7 +8,7 @@ Este documento establece las reglas de convivencia, comunicación y estándares 
 | :--------------------------------- | :----------------- | :---------------- |
 | [Miguel Mauricio Flórez Velásquez] | Líder (Arquitecto) | `@MiguelFlVe`     |
 | [Oscar mauricio solano solano]     | Desarrollador      | `@mao090997-bot`  |
-| [Nombre del Aprendiz 3]            | Desarrollador      | `@usuario3`       |
+| [Jesus David Becerra Lopez] | Desarrollador | `@jesusdavid15` |
 
 ## 2. Canales de Comunicación
 
