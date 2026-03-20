@@ -7,7 +7,7 @@ Este documento establece las reglas de convivencia, comunicación y estándares 
 | Nombre                             | Rol                | Usuario de GitHub |
 | :--------------------------------- | :----------------- | :---------------- |
 | [Miguel Mauricio Flórez Velásquez] | Líder (Arquitecto) | `@MiguelFlVe`     |
-| [Oscar Mauricio Solano Solano]     | Desarrollador      | `@mao090997-bot`  |
+| [Oscar mauricio solano solano]     | Desarrollador      | `@mao090997-bot`  |
 | [Nombre del Aprendiz 3]            | Desarrollador      | `@usuario3`       |
 
 ## 2. Canales de Comunicación
