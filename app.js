@@ -3,49 +3,71 @@
 import { multiplosDeTres } from "./Apropiación/Ejercicio 1.js"
 // Ejercicio 7
 import { sumatoria } from "./Apropiación/Ejercicio 7.js"
+// Ejercicio 8
+import { Adults } from "./Apropiación/Ejercicio 8.js"
 
-// Definir la pop-up para elegir la sección y el ejercicio a ejecutar
+// Definir la interfaz de lectura de datos ingresados por el usuario
 import readline from "node:readline/promises";
 import { stdin as input, stdout as output } from "node:process";
 const rl = readline.createInterface({ input, output });
 
+// Menú de selección de parte de la guía y ejercicio a ejecutar
 while (true){
+    // Elección de parte de la guía a ejecutar
     let choose = await rl.question("¿Qué parte de la guía deseas ejecutar (Apropiación [A] o Transferencia [T])? (Escriba solo la letra inicial del nombre de sección, en mayúscula): ");
 
+    // Se selecciona la parte de Apropiación
     if (choose === "A") {
-        let ejercicio = await rl.question("¿Qué ejercicio de apropiación deseas ejecutar (1-7)?: ");
+        // Elección del ejercicio a ejecutar dentro de Apropiación
+        let ejercicio = await rl.question("¿Qué ejercicio de apropiación deseas ejecutar (1-8)?: ");
         
+        // Se selecciona el ejercicio 1
         if (ejercicio === "1") {
             console.log("Ejercicio 1 de Apropiación:");
             console.log("Diseña un código que muestre los números del 1 al 20, pero solo imprima los múltiplos de 3.");
             console.log(multiplosDeTres());
         }
         
+        // Se selecciona el ejercicio 7
         else if (ejercicio === "7") {
             console.log("Ejercicio 7 de Apropiación:");
             console.log("Diseña un código que sume los números del 1 al 100, pero interrumpa el ciclo si encuentra un número mayor a 90 que sea par.")
             console.log(sumatoria());
         }
         
+        // Se selecciona el ejercicio 8
+        else if (ejercicio === "8") {
+            console.log("Ejercicio 8 de Apropiación:");
+            console.log("Crea un diagrama de flujo que lea el nombre y la edad de 5 personas. Solo mostrará en pantalla aquellas personas que tengan 18 años o más.");
+            console.log(Adults());
+        }
+        
+        // Se selecciona un ejercicio no válido
         else {
-            console.log("Ejercicio no válido. Por favor, elige un número entre 1 y 7.");
+            console.log("Ejercicio no válido. Por favor, elige un número entre 1 y 8.");
         }
     }
     
+    // Se selecciona la parte de Transferencia
     else if (choose === "T") {
         console.log("Ejercicios de transferencia aún no implementados.");
     }
     
+
+    // Se selecciona una sección no válida
     else {
         console.log("Opción no válida. Por favor, elige 'A' para Apropiación o 'T' para Transferencia.");
     }
 
+    // Se cuestiona al usuario sobre su deseo de ejecutar otro Ejercicio
     let continueChoice = await rl.question("¿Deseas ejecutar otro ejercicio? (S/N): ");
     
+    // En caso de que el usuario no desea continuar explícitamente, se cierra el programa
     if (continueChoice.toUpperCase() !== "S") {
         console.log("¡Gracias por usar el programa! Hasta luego.");
         break;
     }
 }
 
+// Se cierra la interfaz de lectura al finalizar el programa
 rl.close();
