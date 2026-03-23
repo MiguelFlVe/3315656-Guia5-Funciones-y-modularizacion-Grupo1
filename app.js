@@ -8,6 +8,10 @@ import { sumatoria } from "./Apropiación/Ejercicio 7.js"
 // Ejercicio 8
 import { Adults } from "./Apropiación/Ejercicio 8.js"
 
+//Transferencia
+// Ejercicio 7
+import { evenodd } from "./Transferencia/Ejercicio 7.js"
+
 // Definir el prompt
 import PromptSync from "prompt-sync";
 const prompt = PromptSync();
@@ -28,13 +32,14 @@ while (true){
             console.log("Diseña un código que muestre los números del 1 al 20, pero solo imprima los múltiplos de 3.");
             console.log(multiplosDeTres());
         }
+
         //Se selecciona el ejercicio 2
         else if (ejercicio === "2") {
             console.log("Ejercicio 2 de Apropiación:");
             console.log("Registrar ingreso de 5 estudiantes, validando carné.");
             console.log(registrarIngresoEstudiantes(prompt));
-}
-        
+        }
+
         // Se selecciona el ejercicio 7
         else if (ejercicio === "7") {
             console.log("Ejercicio 7 de Apropiación:");
@@ -57,10 +62,15 @@ while (true){
     
     // Se selecciona la parte de Transferencia
     else if (choose === "T") {
-        console.log("Ejercicios de transferencia aún no implementados.");
+        let ejercicio = prompt("¿Qué ejercicio de transferencia deseas ejecutar (1-8)?: ");
+
+        if (ejercicio === "7") {
+            console.log("Ejercicio 7 de Transferencia:");
+            console.log("Crea un programa que: permita al usuario ingresar 10 números. Al final, muestra cuántos fueron pares y cuántos impares.");
+            console.log(evenodd());
+        }
     }
     
-
     // Se selecciona una sección no válida
     else {
         console.log("Opción no válida. Por favor, elige 'A' para Apropiación o 'T' para Transferencia.");
