@@ -1,6 +1,8 @@
 //Apropiación
 // Ejercicio 1
 import { multiplosDeTres } from "./Apropiación/Ejercicio 1.js"
+// Ejercicio 2
+import { registrarIngresoEstudiantes } from "./Apropiación/Ejercicio 2.js";
 // Ejercicio 7
 import { sumatoria } from "./Apropiación/Ejercicio 7.js"
 // Ejercicio 8
@@ -26,6 +28,12 @@ while (true){
             console.log("Diseña un código que muestre los números del 1 al 20, pero solo imprima los múltiplos de 3.");
             console.log(multiplosDeTres());
         }
+        //Se selecciona el ejercicio 2
+        else if (ejercicio === "2") {
+            console.log("Ejercicio 2 de Apropiación:");
+            console.log("Registrar ingreso de 5 estudiantes, validando carné.");
+            console.log(registrarIngresoEstudiantes(prompt));
+}
         
         // Se selecciona el ejercicio 7
         else if (ejercicio === "7") {
