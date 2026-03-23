@@ -11,6 +11,8 @@ import { Adults } from "./Apropiación/Ejercicio 8.js"
 //Transferencia
 // Ejercicio 7
 import { evenodd } from "./Transferencia/Ejercicio 7.js"
+// Ejercicio 8
+import { login } from "./Transferencia/Ejercicio 8.js"
 
 // Definir el prompt
 import PromptSync from "prompt-sync";
@@ -68,6 +70,16 @@ while (true){
             console.log("Ejercicio 7 de Transferencia:");
             console.log("Crea un programa que: permita al usuario ingresar 10 números. Al final, muestra cuántos fueron pares y cuántos impares.");
             console.log(evenodd());
+        }
+        
+        else if (ejercicio === "8") {
+            console.log("Ejercicio 8 de Transferencia:");
+            console.log("Crea un programa que: solicite un usuario y contraseña. El programa debe permitir hasta 3 intentos; si el usuario falla en todos, mostrar un mensaje de “Acceso denegado”. Si acierta, mostrar “Bienvenido”.");
+            console.log(login());
+        }
+
+        else {
+            console.log("Ejercicio no válido. Por favor, elige un número entre 1 y 8.");
         }
     }
     
