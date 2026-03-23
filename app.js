@@ -6,20 +6,19 @@ import { sumatoria } from "./Apropiación/Ejercicio 7.js"
 // Ejercicio 8
 import { Adults } from "./Apropiación/Ejercicio 8.js"
 
-// Definir la interfaz de lectura de datos ingresados por el usuario
-import readline from "node:readline/promises";
-import { stdin as input, stdout as output } from "node:process";
-const rl = readline.createInterface({ input, output });
+// Definir el prompt
+import PromptSync from "prompt-sync";
+const prompt = PromptSync();
 
 // Menú de selección de parte de la guía y ejercicio a ejecutar
 while (true){
     // Elección de parte de la guía a ejecutar
-    let choose = await rl.question("¿Qué parte de la guía deseas ejecutar (Apropiación [A] o Transferencia [T])? (Escriba solo la letra inicial del nombre de sección, en mayúscula): ");
+    let choose = prompt("¿Qué parte de la guía deseas ejecutar (Apropiación [A] o Transferencia [T])? (Escriba solo la letra inicial del nombre de sección, en mayúscula): ");
 
     // Se selecciona la parte de Apropiación
     if (choose === "A") {
         // Elección del ejercicio a ejecutar dentro de Apropiación
-        let ejercicio = await rl.question("¿Qué ejercicio de apropiación deseas ejecutar (1-8)?: ");
+        let ejercicio = prompt("¿Qué ejercicio de apropiación deseas ejecutar (1-8)?: ");
         
         // Se selecciona el ejercicio 1
         if (ejercicio === "1") {
@@ -60,7 +59,7 @@ while (true){
     }
 
     // Se cuestiona al usuario sobre su deseo de ejecutar otro Ejercicio
-    let continueChoice = await rl.question("¿Deseas ejecutar otro ejercicio? (S/N): ");
+    let continueChoice = prompt("¿Deseas ejecutar otro ejercicio? (S/N): ");
     
     // En caso de que el usuario no desea continuar explícitamente, se cierra el programa
     if (continueChoice.toUpperCase() !== "S") {
@@ -68,6 +67,3 @@ while (true){
         break;
     }
 }
-
-// Se cierra la interfaz de lectura al finalizar el programa
-rl.close();
