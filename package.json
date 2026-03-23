@@ -1,0 +1,16 @@
+{
+  "name": "3315656-guia5-funciones-y-modularizacion-grupo1",
+  "version": "1.0.0",
+  "description": "**Metodología:** *\"Del Requerimiento al Producto\"*",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC"
+}
