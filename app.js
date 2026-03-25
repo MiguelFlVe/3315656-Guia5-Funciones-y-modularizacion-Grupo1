@@ -97,7 +97,7 @@ while (true){
             console.log("Crea un programa que: simule un cajero automático.");
             console.log(cajeroAutomatico(prompt));
         }
-
+        
         else if (ejercicio === "7") {
             console.log("Ejercicio 7 de Transferencia:");
             console.log("Crea un programa que: permita al usuario ingresar 10 números. Al final, muestra cuántos fueron pares y cuántos impares.");
