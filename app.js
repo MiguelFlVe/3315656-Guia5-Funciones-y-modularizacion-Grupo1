@@ -85,7 +85,7 @@ while (true){
             console.log("Crea un programa que: muestre todos los números primos entre 1 y 50.");
             console.log(numerosPrimos());
         }
-        if (ejercicio === "2") {
+        else if (ejercicio === "2") {
         console.log("Ejercicio 2 de Transferencia:");
             console.log("Crea un programa que: dado un número ingresado por el usuario, muestre su tabla de multiplicar hasta el 12");
             console.log(tablaMultiplicar(prompt));
