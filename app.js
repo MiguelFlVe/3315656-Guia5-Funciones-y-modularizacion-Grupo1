@@ -79,26 +79,26 @@ while (true){
     // Se selecciona la parte de Transferencia
     else if (choose === "T") {
         let ejercicio = prompt("¿Qué ejercicio de transferencia deseas ejecutar (1-8)?: ");
-
-<<<<<<< HEAD
         
-
-
-
-
-        if (ejercicio === "2") {
-            console.log("Ejercicio 2 de Transferencia:");
-            console.log("Crea un programa que: dado un número ingresado por el usuario, muestre su tabla de multiplicar hasta el 12");
-            console.log(tablaMultiplicar(prompt));
-        }
-=======
         if (ejercicio === "1") {
             console.log("Ejercicio 1 de Transferencia:");
             console.log("Crea un programa que: muestre todos los números primos entre 1 y 50.");
             console.log(numerosPrimos());
         }
+        if (ejercicio === "2") {
+        console.log("Ejercicio 2 de Transferencia:");
+            console.log("Crea un programa que: dado un número ingresado por el usuario, muestre su tabla de multiplicar hasta el 12");
+            console.log(tablaMultiplicar(prompt));
+        }
 
->>>>>>> develop
+        
+
+
+
+
+        
+
+
         else if (ejercicio === "7") {
             console.log("Ejercicio 7 de Transferencia:");
             console.log("Crea un programa que: permita al usuario ingresar 10 números. Al final, muestra cuántos fueron pares y cuántos impares.");
