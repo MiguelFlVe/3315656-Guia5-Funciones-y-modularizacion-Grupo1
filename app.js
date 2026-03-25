@@ -15,8 +15,8 @@ import { Adults } from "./Apropiación/Ejercicio 8.js"
 import { numerosPrimos } from "./Transferencia/Ejercicio 1.js"
 //Ejercicio 2
 import { tablaMultiplicar } from "./Transferencia/Ejercicio 2.js"
-
-
+//Ejercicio 3
+import { cajeroAutomatico } from "./Transferencia/Ejercicio 3.js"
 // Ejercicio 7
 import { evenodd } from "./Transferencia/Ejercicio 7.js"
 // Ejercicio 8
@@ -85,20 +85,19 @@ while (true){
             console.log("Crea un programa que: muestre todos los números primos entre 1 y 50.");
             console.log(numerosPrimos());
         }
+        
         else if (ejercicio === "2") {
         console.log("Ejercicio 2 de Transferencia:");
             console.log("Crea un programa que: dado un número ingresado por el usuario, muestre su tabla de multiplicar hasta el 12");
             console.log(tablaMultiplicar(prompt));
         }
 
+        else if (ejercicio === "3") {
+        console.log("Ejercicio 3 de Transferencia:");
+            console.log("Crea un programa que: simule un cajero automático.");
+            console.log(cajeroAutomatico(prompt));
+        }
         
-
-
-
-
-        
-
-
         else if (ejercicio === "7") {
             console.log("Ejercicio 7 de Transferencia:");
             console.log("Crea un programa que: permita al usuario ingresar 10 números. Al final, muestra cuántos fueron pares y cuántos impares.");
