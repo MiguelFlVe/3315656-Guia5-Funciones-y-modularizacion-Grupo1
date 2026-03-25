@@ -9,6 +9,10 @@ import { sumatoria } from "./Apropiación/Ejercicio 7.js"
 import { Adults } from "./Apropiación/Ejercicio 8.js"
 
 //Transferencia
+
+
+//Ejercicio 2
+import { tablaMultiplicar } from "./Transferencia/Ejercicio 2.js"
 // Ejercicio 7
 import { evenodd } from "./Transferencia/Ejercicio 7.js"
 // Ejercicio 8
@@ -66,7 +70,17 @@ while (true){
     else if (choose === "T") {
         let ejercicio = prompt("¿Qué ejercicio de transferencia deseas ejecutar (1-8)?: ");
 
-        if (ejercicio === "7") {
+        
+
+
+
+
+        if (ejercicio === "2") {
+            console.log("Ejercicio 2 de Transferencia:");
+            console.log("Crea un programa que: dado un número ingresado por el usuario, muestre su tabla de multiplicar hasta el 12");
+            console.log(tablaMultiplicar(prompt));
+        }
+        else if (ejercicio === "7") {
             console.log("Ejercicio 7 de Transferencia:");
             console.log("Crea un programa que: permita al usuario ingresar 10 números. Al final, muestra cuántos fueron pares y cuántos impares.");
             console.log(evenodd());
