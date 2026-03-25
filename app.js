@@ -79,8 +79,13 @@ while (true){
     // Se selecciona la parte de Transferencia
     else if (choose === "T") {
         let ejercicio = prompt("¿Qué ejercicio de transferencia deseas ejecutar (1-8)?: ");
+        
+        if (ejercicio === "1") {
+            console.log("Ejercicio 1 de Transferencia:");
+            console.log("Crea un programa que: muestre todos los números primos entre 1 y 50.");
+            console.log(numerosPrimos());
+        }
 
-<<<<<<< HEAD
         
         
         
@@ -94,14 +99,8 @@ while (true){
             console.log("Crea un programa que: simule un cajero automático.");
             console.log(cajeroAutomatico(prompt));
         }
-=======
-        if (ejercicio === "1") {
-            console.log("Ejercicio 1 de Transferencia:");
-            console.log("Crea un programa que: muestre todos los números primos entre 1 y 50.");
-            console.log(numerosPrimos());
-        }
 
->>>>>>> develop
+
         else if (ejercicio === "7") {
             console.log("Ejercicio 7 de Transferencia:");
             console.log("Crea un programa que: permita al usuario ingresar 10 números. Al final, muestra cuántos fueron pares y cuántos impares.");
