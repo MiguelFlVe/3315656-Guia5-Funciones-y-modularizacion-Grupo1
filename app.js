@@ -11,6 +11,8 @@ import { sumatoria } from "./Apropiación/Ejercicio 7.js"
 import { Adults } from "./Apropiación/Ejercicio 8.js"
 
 //Transferencia
+//Ejercicio 1
+import { numerosPrimos } from "./Transferencia/Ejercicio 1.js"
 // Ejercicio 7
 import { evenodd } from "./Transferencia/Ejercicio 7.js"
 // Ejercicio 8
@@ -74,7 +76,13 @@ while (true){
     else if (choose === "T") {
         let ejercicio = prompt("¿Qué ejercicio de transferencia deseas ejecutar (1-8)?: ");
 
-        if (ejercicio === "7") {
+        if (ejercicio === "1") {
+            console.log("Ejercicio 1 de Transferencia:");
+            console.log("Crea un programa que: muestre todos los números primos entre 1 y 50.");
+            console.log(numerosPrimos());
+        }
+
+        else if (ejercicio === "7") {
             console.log("Ejercicio 7 de Transferencia:");
             console.log("Crea un programa que: permita al usuario ingresar 10 números. Al final, muestra cuántos fueron pares y cuántos impares.");
             console.log(evenodd());
