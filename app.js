@@ -3,6 +3,8 @@
 import { multiplosDeTres } from "./Apropiación/Ejercicio 1.js"
 // Ejercicio 2
 import { registrarIngresoEstudiantes } from "./Apropiación/Ejercicio 2.js";
+//Ejercicio 3
+import { numerosMayoresA50 } from "./Apropiación/Ejercicio 3.js";
 // Ejercicio 7
 import { sumatoria } from "./Apropiación/Ejercicio 7.js"
 // Ejercicio 8
@@ -40,6 +42,12 @@ while (true){
             console.log("Ejercicio 2 de Apropiación:");
             console.log("Registrar ingreso de 5 estudiantes, validando carné.");
             console.log(registrarIngresoEstudiantes(prompt));
+        }
+        //Se selecciona el ejercicio 3
+        else if (ejercicio === "3") {
+            console.log("Ejercicio 3 de Apropiación:");
+            console.log("Realiza un diagrama de flujo que pida al usuario ingresar 10 números y muestre únicamente los que sean mayores que 50.");
+            console.log(numerosMayoresA50(prompt));
         }
 
         // Se selecciona el ejercicio 7
