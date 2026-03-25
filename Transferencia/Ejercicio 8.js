@@ -7,8 +7,8 @@ const prompt = PromptSync();
 // Función para resolver el ejercicio
 let tries, correctuser, correctpass;
 tries = 0
-correctuser = 'Usuario Correcto'
-correctpass = 'Contraseña Correcta'
+correctuser = 'CorrectUser'
+correctpass = 'CorrectPassword'
 
 const login = () => {
     // Bucle para permitir un máximo de 3 intentos
