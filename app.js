@@ -5,9 +5,9 @@ import { multiplosDeTres } from "./Apropiación/Ejercicio 1.js"
 import { registrarIngresoEstudiantes } from "./Apropiación/Ejercicio 2.js";
 //Ejercicio 3
 import { numerosMayoresA50 } from "./Apropiación/Ejercicio 3.js";
-// Ejercicio 7
- */
+// Ejercicio 4
 import { simularCajero } from "./Apropiación/Ejercicio 4.js";
+// Ejercicio 7
 import { sumatoria } from "./Apropiación/Ejercicio 7.js"
 // Ejercicio 8
 import { Adults } from "./Apropiación/Ejercicio 8.js"
@@ -15,6 +15,10 @@ import { Adults } from "./Apropiación/Ejercicio 8.js"
 //Transferencia
 //Ejercicio 1
 import { numerosPrimos } from "./Transferencia/Ejercicio 1.js"
+//Ejercicio 2
+import { tablaMultiplicar } from "./Transferencia/Ejercicio 2.js"
+//Ejercicio 3
+import { cajeroAutomatico } from "./Transferencia/Ejercicio 3.js"
 // Ejercicio 7
 import { evenodd } from "./Transferencia/Ejercicio 7.js"
 // Ejercicio 8
@@ -58,48 +62,61 @@ while (true) {
       console.log("Ejercicio 4 de Apropiación:");
       console.log("4. Diseña un diagrama de flujo que simule un cajero automático: ");
       console.log(numerosMayoresA50(prompt));
-
-        // Se selecciona el ejercicio 7
-        else if (ejercicio === "7") {
-        console.log("Ejercicio 7 de Apropiación:");
-        console.log("Diseña un código que sume los números del 1 al 100, pero interrumpa el ciclo si encuentra un número mayor a 90 que sea par.")
-        console.log(sumatoria());
-      }
-
-      // Se selecciona el ejercicio 8
-      else if (ejercicio === "8") {
-        console.log("Ejercicio 8 de Apropiación:");
-        console.log("Crea un diagrama de flujo que lea el nombre y la edad de 5 personas. Solo mostrará en pantalla aquellas personas que tengan 18 años o más.");
-        console.log(Adults());
-      }
-
-      // Se selecciona un ejercicio no válido
-      else {
-        console.log("Ejercicio no válido. Por favor, elige un número entre 1 y 8.");
-      }
     }
+
+    // Se selecciona el ejercicio 7
+    else if (ejercicio === "7") {
+      console.log("Ejercicio 7 de Apropiación:");
+      console.log("Diseña un código que sume los números del 1 al 100, pero interrumpa el ciclo si encuentra un número mayor a 90 que sea par.")
+      console.log(sumatoria());
+    }
+
+    // Se selecciona el ejercicio 8
+    else if (ejercicio === "8") {
+      console.log("Ejercicio 8 de Apropiación:");
+      console.log("Crea un diagrama de flujo que lea el nombre y la edad de 5 personas. Solo mostrará en pantalla aquellas personas que tengan 18 años o más.");
+      console.log(Adults());
+    }
+
+    // Se selecciona un ejercicio no válido
+    else {
+      console.log("Ejercicio no válido. Por favor, elige un número entre 1 y 8.");
+    }
+  }
 
     // Se selecciona la parte de Transferencia
     else if (choose === "T") {
-      let ejercicio = prompt("¿Qué ejercicio de transferencia deseas ejecutar (1-8)?: ");
+        let ejercicio = prompt("¿Qué ejercicio de transferencia deseas ejecutar (1-8)?: ");
+        
+        if (ejercicio === "1") {
+            console.log("Ejercicio 1 de Transferencia:");
+            console.log("Crea un programa que: muestre todos los números primos entre 1 y 50.");
+            console.log(numerosPrimos());
+        }
+        
+        else if (ejercicio === "2") {
+        console.log("Ejercicio 2 de Transferencia:");
+            console.log("Crea un programa que: dado un número ingresado por el usuario, muestre su tabla de multiplicar hasta el 12");
+            console.log(tablaMultiplicar(prompt));
+        }
 
-      if (ejercicio === "1") {
-        console.log("Ejercicio 1 de Transferencia:");
-        console.log("Crea un programa que: muestre todos los números primos entre 1 y 50.");
-        console.log(numerosPrimos());
-      }
-
-      else if (ejercicio === "7") {
-        console.log("Ejercicio 7 de Transferencia:");
-        console.log("Crea un programa que: permita al usuario ingresar 10 números. Al final, muestra cuántos fueron pares y cuántos impares.");
-        console.log(evenodd());
-      }
-
-      else if (ejercicio === "8") {
-        console.log("Ejercicio 8 de Transferencia:");
-        console.log("Crea un programa que: solicite un usuario y contraseña. El programa debe permitir hasta 3 intentos; si el usuario falla en todos, mostrar un mensaje de “Acceso denegado”. Si acierta, mostrar “Bienvenido”.");
-        console.log(login());
-      }
+        else if (ejercicio === "3") {
+        console.log("Ejercicio 3 de Transferencia:");
+            console.log("Crea un programa que: simule un cajero automático.");
+            console.log(cajeroAutomatico(prompt));
+        }
+        
+        else if (ejercicio === "7") {
+            console.log("Ejercicio 7 de Transferencia:");
+            console.log("Crea un programa que: permita al usuario ingresar 10 números. Al final, muestra cuántos fueron pares y cuántos impares.");
+            console.log(evenodd());
+        }
+        
+        else if (ejercicio === "8") {
+            console.log("Ejercicio 8 de Transferencia:");
+            console.log("Crea un programa que: solicite un usuario y contraseña. El programa debe permitir hasta 3 intentos; si el usuario falla en todos, mostrar un mensaje de “Acceso denegado”. Si acierta, mostrar “Bienvenido”.");
+            console.log(login());
+        }
 
       else {
         console.log("Ejercicio no válido. Por favor, elige un número entre 1 y 8.");
