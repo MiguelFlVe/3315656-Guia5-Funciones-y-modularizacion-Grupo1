@@ -23,6 +23,8 @@ import { numerosPrimos } from "./Transferencia/Ejercicio 1.js"
 import { tablaMultiplicar } from "./Transferencia/Ejercicio 2.js"
 //Ejercicio 3
 import { cajeroAutomatico } from "./Transferencia/Ejercicio 3.js"
+//Ejercicio 4
+import { promedioNotas } from "./Transferencia/Ejercicio 4.js"
 // Ejercicio 7
 import { evenodd } from "./Transferencia/Ejercicio 7.js"
 // Ejercicio 8
@@ -61,21 +63,21 @@ while (true) {
       console.log("Realiza un diagrama de flujo que pida al usuario ingresar 10 números y muestre únicamente los que sean mayores que 50.");
       console.log(numerosMayoresA50(prompt));
     }
-    
+
     //Se selecciona el ejercicio 4
     else if (ejercicio === "4") {
       console.log("Ejercicio 4 de Apropiación:");
       console.log("4. Diseña un diagrama de flujo que simule un cajero automático: ");
       console.log(simularCajero(prompt));
     }
-    
+
     //Se selecciona el ejercicio 5
     else if (ejercicio === "5") {
       console.log("Ejercicio 5 de Apropiación:");
       console.log("un diagrama de flujo que represente una competencia de atletismo con 8 corredores ");
       console.log(simularCompetencia(prompt));
     }
-      
+
     //Se selecciona el ejercicio 6
     else if (ejercicio === "6") {
       console.log("Ejercicio 6 de Apropiación:");
@@ -123,6 +125,12 @@ while (true) {
       console.log("Ejercicio 3 de Transferencia:");
       console.log("Crea un programa que: simule un cajero automático.");
       console.log(cajeroAutomatico(prompt));
+    }
+
+    else if (ejercicio === "4") {
+      console.log("Ejercicio 4 de Transferencia:");
+      console.log("Calcula el promedio y determina si aprueba o reprueba.");
+      console.log(promedioNotas(prompt));
     }
 
     else if (ejercicio === "7") {
