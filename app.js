@@ -7,6 +7,8 @@ import { registrarIngresoEstudiantes } from "./Apropiación/Ejercicio 2.js";
 import { numerosMayoresA50 } from "./Apropiación/Ejercicio 3.js";
 // Ejercicio 4
 import { simularCajero } from "./Apropiación/Ejercicio 4.js";
+// Ejercicio 5
+import { simularCompetencia } from "./Apropiación/Ejercicio 5.js";
 // Ejercicio 7
 import { sumatoria } from "./Apropiación/Ejercicio 7.js"
 // Ejercicio 8
@@ -57,11 +59,19 @@ while (true) {
       console.log("Realiza un diagrama de flujo que pida al usuario ingresar 10 números y muestre únicamente los que sean mayores que 50.");
       console.log(numerosMayoresA50(prompt));
     }
+    
     //Se selecciona el ejercicio 4
     else if (ejercicio === "4") {
       console.log("Ejercicio 4 de Apropiación:");
       console.log("4. Diseña un diagrama de flujo que simule un cajero automático: ");
       console.log(simularCajero(prompt));
+    }
+    
+    //Se selecciona el ejercicio 5
+    else if (ejercicio === "5") {
+      console.log("Ejercicio 5 de Apropiación:");
+      console.log("un diagrama de flujo que represente una competencia de atletismo con 8 corredores ");
+      console.log(simularCompetencia(prompt));
     }
 
     // Se selecciona el ejercicio 7
