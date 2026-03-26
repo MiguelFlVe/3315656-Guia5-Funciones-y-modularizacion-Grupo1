@@ -61,7 +61,7 @@ while (true) {
     else if (ejercicio === "4") {
       console.log("Ejercicio 4 de Apropiación:");
       console.log("4. Diseña un diagrama de flujo que simule un cajero automático: ");
-      console.log(numerosMayoresA50(prompt));
+      console.log(simularCajero(prompt));
     }
 
     // Se selecciona el ejercicio 7
