@@ -27,6 +27,8 @@ import { cajeroAutomatico } from "./Transferencia/Ejercicio 3.js"
 import { promedioNotas } from "./Transferencia/Ejercicio 4.js"
 //Ejercicio 5
 import { tiendaProductos } from "./Transferencia/Ejercicio 5.js"
+//Ejercicio 6
+import { juegoAdivinador } from "./Transferencia/Ejercicio 6.js"
 // Ejercicio 7
 import { evenodd } from "./Transferencia/Ejercicio 7.js"
 // Ejercicio 8
@@ -138,6 +140,11 @@ while (true) {
       console.log("Ejercicio 5 de Transferencia:");
       console.log("Simulación de tienda de productos");
       console.log(tiendaProductos(prompt));
+    }
+    else if (ejercicio === "6") {
+      console.log("Ejercicio 6 de Transferencia:");
+      console.log("Juego del adivinador.");
+      console.log(juegoAdivinador(prompt));
     }
 
     else if (ejercicio === "7") {
