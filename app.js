@@ -25,6 +25,8 @@ import { tablaMultiplicar } from "./Transferencia/Ejercicio 2.js"
 import { cajeroAutomatico } from "./Transferencia/Ejercicio 3.js"
 //Ejercicio 4
 import { promedioNotas } from "./Transferencia/Ejercicio 4.js"
+//Ejercicio 5
+import { tiendaProductos } from "./Transferencia/Ejercicio 5.js"
 // Ejercicio 7
 import { evenodd } from "./Transferencia/Ejercicio 7.js"
 // Ejercicio 8
@@ -131,6 +133,11 @@ while (true) {
       console.log("Ejercicio 4 de Transferencia:");
       console.log("Calcula el promedio y determina si aprueba o reprueba.");
       console.log(promedioNotas(prompt));
+    }
+    else if (ejercicio === "5") {
+      console.log("Ejercicio 5 de Transferencia:");
+      console.log("Simulación de tienda de productos");
+      console.log(tiendaProductos(prompt));
     }
 
     else if (ejercicio === "7") {
